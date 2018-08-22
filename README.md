@@ -8,3 +8,5 @@ In this first release users will have a form where they will select a subject(sc
 Users land on their current day’s wall, where all their posts will display in chronological order, or show “No posts today”. There will be a form button where the user can record their entry and post to the db. There will also be a jump to date toggle, where users can jump to a particular date.
 There will also be a search function where users can filter by topic, mood, or search subject lines for entries. This will display chronological.  
 Users will be able to see graph metrics through chartsjs data visualization and future implementations may add markdown ability to the body of posts using markedjs library. 
+**Tech:**
+React, Cypress, ChartJS, Node, Express, Knex, PostgreSQL, Bootstrap
