@@ -1,0 +1,19 @@
+{
+  "name": "the-mindful-blurb-journal",
+  "version": "1.0.0",
+  "description": "micro-journaling app to collect the passing musings through the day as they happen, rather than by recall",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JRockenmacher/the-mindful-blurb-journal.git"
+  },
+  "author": "JSR",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JRockenmacher/the-mindful-blurb-journal/issues"
+  },
+  "homepage": "https://github.com/JRockenmacher/the-mindful-blurb-journal#readme"
+}
