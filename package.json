@@ -4,7 +4,7 @@
   "description": "micro-journaling app to collect the passing musings through the day as they happen, rather than by recall",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress run --spec 'node_modules/.bin/cypress/integration/tests.js'"
   },
   "repository": {
     "type": "git",

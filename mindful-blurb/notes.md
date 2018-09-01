@@ -10,3 +10,9 @@
 - help component will have a module that pops up with directions and  philosophy of app
 - mood and subject will have an easy drop-down or have the option of putting in custom one via text box
 - on header look up past days with an option that pops out a calendar module 
+- test driven development techniques
+
+#app objectives: 
+- user auth
+- test driven dev
+- reusability of components

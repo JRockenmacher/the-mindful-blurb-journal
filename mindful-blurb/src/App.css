@@ -22,6 +22,28 @@
   font-size: large;
 }
 
+.test-emoticon {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.main-blurb {
+  margin-right: 10vw;
+  margin-left: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.blurb-header {
+  border: ridge 5px gray;
+  display: flex;
+  justify-content: space-between
+}
+
+.blurb-body {
+  border: ridge 5px gray;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
