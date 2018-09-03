@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/JRockenmacher/the-mindful-blurb-journal/issues"
   },
-  "homepage": "https://github.com/JRockenmacher/the-mindful-blurb-journal#readme"
+  "homepage": "https://github.com/JRockenmacher/the-mindful-blurb-journal#readme",
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-bootstrap": "^0.32.3",
+    "react-dom": "^16.4.2"
+  }
 }
