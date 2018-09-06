@@ -1,15 +1,79 @@
 import React, { Component } from 'react';
+import { Button, Form, FormGroup, FormControl, ControlLabel, Col } from 'react-bootstrap'
 
 class BlurbForm extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            title: "",
+            topic: "",
+            emotion: "",
+            body: "",
+            showForm: false
+        }
+    }
+    handleChange = (e) => {
+        console.log(this.state)
+        const key = e.target.name
+        const value = e.target.value
+        this.setState({
+            [key] : value
+        })
+    }
+    
+    showForm = () => {
 
     }
+
     
     render() {
         return (
-            <div>
-                
+            <div className="container">
+                <Button 
+                className="btn-show-form" 
+                bsStyle="warning"
+                // onClick="showForm"
+                >
+                Cheeto For A Thot
+                </Button>
+                <Form horizontal
+                // className="Container"
+                >
+
+                    <FormGroup controlId="formHorizontalTitle">
+                        <Col componentClass={ControlLabel} sm={2}>
+                        Topic
+                        </Col>
+                        <Col sm={10}>
+                        <FormControl 
+                        type="text"
+                        name="title" 
+                        placeholder="Title" 
+                        value= {this.state.title}
+                        // onChange= {this.handleChange}                      }
+                        />
+                        </Col>
+                    </FormGroup>
+
+                    <FormGroup controlId="formHorizontalTopic">
+                        <Col componentClass={ControlLabel} sm={2}>
+                        Topic
+                        </Col>
+                        <Col sm={10}>
+                        <FormControl type="text" name="topic" placeholder="Topic" />
+                        </Col>
+                    </FormGroup>
+
+                    {/* <label htmlFor="title">Title</label>
+                        <input type="text" name="title" value={this.state.title}/>
+                    <label htmlFor="topic">Topic</label>
+                        <input type="select" name="topic" value={this.state.topic}/>
+                    <label htmlFor="mood">Mood</label>
+                        <input type="select" name="mood" value={this.state.emotion}/>
+                    <label htmlFor="body">Blurb Here!</label>
+                        <textarea name="body" id="body" maxLength="240">{this.state.body}</textarea> */}
+                </Form>
+
             </div>
         );
     }

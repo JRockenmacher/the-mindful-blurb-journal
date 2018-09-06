@@ -27,7 +27,7 @@
   max-height: 50px;
 }
 
-.main-blurb {
+.main-blurb-container {
   margin-right: 10vw;
   margin-left: 10vw;
   display: flex;

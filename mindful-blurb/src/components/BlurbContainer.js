@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import BlurbForm from './BlurbForm';
+
 
 class BlurbContainer extends Component {
     constructor(props){
@@ -13,7 +15,7 @@ class BlurbContainer extends Component {
     }
     render() {
         return (
-            <article className="main-blurb container">
+            <article className="main-blurb-container">
                 <div className="blurb-header">
                     <span>Post title</span>
                     <span>Post topic</span>

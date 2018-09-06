@@ -9,4 +9,11 @@ describe('First test driven dev test', () => {
         cy.get('.App-header')
     })
     })
+    it('should have a container for the days blurbs', () => {
+        cy.get('.main-blurb-container')
+    })
+    it('has a button that opens a hidden form', () => {
+        cy.get('.btn-show-form')
+        .click()
+    })
 })
