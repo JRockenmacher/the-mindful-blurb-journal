@@ -9,7 +9,7 @@ class BlurbForm extends Component {
             topic: "",
             emotion: "",
             body: "",
-            showForm: false
+            // showForm: false
         }
     }
     handleChange = (e) => {
@@ -21,9 +21,7 @@ class BlurbForm extends Component {
         })
     }
     
-    showForm = () => {
-
-    }
+    // showForm = () => 
 
     
     render() {
@@ -42,15 +40,15 @@ class BlurbForm extends Component {
 
                     <FormGroup controlId="formHorizontalTitle">
                         <Col componentClass={ControlLabel} sm={2}>
-                        Topic
+                        Title
                         </Col>
                         <Col sm={10}>
                         <FormControl 
                         type="text"
                         name="title" 
-                        placeholder="Title" 
                         value= {this.state.title}
-                        // onChange= {this.handleChange}                      }
+                        placeholder="Title" 
+                        onChange= {this.handleChange}                     
                         />
                         </Col>
                     </FormGroup>
@@ -60,7 +58,12 @@ class BlurbForm extends Component {
                         Topic
                         </Col>
                         <Col sm={10}>
-                        <FormControl type="text" name="topic" placeholder="Topic" />
+                        <FormControl type="text" 
+                        name="topic" 
+                        value={this.state.topic}
+                        placeholder="Topic" 
+                        onChange= {this.handleChange}
+                        />
                         </Col>
                     </FormGroup>
 
