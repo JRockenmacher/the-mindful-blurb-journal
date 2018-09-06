@@ -67,6 +67,20 @@ class BlurbForm extends Component {
                         </Col>
                     </FormGroup>
 
+                    <FormGroup controlId="formHorizontalTopic">
+                        <Col componentClass={ControlLabel} sm={2}>
+                        Emotion
+                        </Col>
+                        <Col sm={10}>
+                        <FormControl type="text" 
+                        name="emotion" 
+                        value={this.state.emotion}
+                        placeholder="How Are You Feeling" 
+                        onChange= {this.handleChange}
+                        />
+                        </Col>
+                    </FormGroup>
+
                     {/* <label htmlFor="title">Title</label>
                         <input type="text" name="title" value={this.state.title}/>
                     <label htmlFor="topic">Topic</label>
